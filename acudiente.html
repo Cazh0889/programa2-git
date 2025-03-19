@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Acudiente</title>
+  <link rel="stylesheet" href="styleacu.css">
+</head>
+<script src="script.js"></script>
+<body>
+  <h1>Información del Acudiente</h1>
+  <div class="formulario1">
+    <form action="#" method="POST">
+      <div class="documento">
+        <label for="tipo_identificacion" class="documentos">Tipo de identificación:</label>
+        <select id="tipo_identificacion" name="tipo_identificacion" required>
+          <option value="" disabled selected>--Selecciona una opción--</option>
+          <option value="1">Registro civil</option>
+          <option value="2">Cédula de ciudadanía</option>
+          <option value="3">Tarjeta de identidad</option>
+          <option value="4">Permiso de protección temporal</option>
+          <option value="5">Acta de nacimiento</option>
+        </select>
+      </div>
+
+      <div class="informacion">
+        <label for="identificacion">Número de identificación:</label>
+        <input type="text" id="identificacion" name="identificacion" placeholder="Número de identidad" required>
+        
+        <label for="nombre1">Primer Nombre:</label>
+        <input type="text" id="nombre1" name="nombre1" placeholder="Primer Nombre" required>
+        
+        <label for="nombre2">Segundo Nombre:</label>
+        <input type="text" id="nombre2" name="nombre2" placeholder="Segundo Nombre">
+        
+        <label for="apellido1">Primer Apellido:</label>
+        <input type="text" id="apellido1" name="apellido1" placeholder="Primer Apellido" required>
+        
+        <label for="apellido2">Segundo Apellido:</label>
+        <input type="text" id="apellido2" name="apellido2" placeholder="Segundo Apellido">
+        
+        <label for="fecha-nacimiento">Fecha de nacimiento:</label>
+        <input type="date" id="fecha-nacimiento" name="fecha_nacimiento">
+      </div>
+      
+      <div style="display: flex; justify-content: space-between;">
+        <button type="submit">Anterior</button>
+        <button type="submit">Finalizar ✔</button>
+      </div>
+    </form>
+  </div>
+</body>
+</html>
+

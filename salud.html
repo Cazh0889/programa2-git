@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Salud - Garantía de Derecho</title>
+  <link rel="stylesheet" href="stylesal.css">
+</head>
+<script src="script.js"></script>
+
+<body>
+  <div>
+    <h1>Información: Garantía de Derecho</h1>
+  </div>
+  <form>
+    <fieldset>
+      <legend>Valoración Integral</legend>
+      <div>
+        <label for="valoracion">¿Valoración integral actualizada?</label>
+        <select id="valoracion" name="valoracion" required>
+          <option value="">-- Selecciona una opción --</option>
+          <option value="si">Sí</option>
+          <option value="no">No</option>
+        </select>
+      </div>
+      <div>
+        <label for="fecha_valoracion">Fecha de la última cita de valoración integral:</label>
+        <input type="date" id="fecha_valoracion" name="fecha_valoracion">
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <legend>Esquema de Vacunas</legend>
+      <div>
+        <label for="vacunas">¿Esquema de vacunas completo?</label>
+        <select id="vacunas" name="vacunas" required>
+          <option value="">-- Selecciona una opción --</option>
+          <option value="si">Sí</option>
+          <option value="no">No</option>
+        </select>
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <legend>Tamizajes</legend>
+      <div>
+        <label for="bucal">¿Tamizaje bucal actualizado?</label>
+        <select id="bucal" name="bucal" required>
+          <option value="">-- Selecciona una opción --</option>
+          <option value="si">Sí</option>
+          <option value="no">No</option>
+        </select>
+      </div>
+      <div>
+        <label for="fecha_bucal">Fecha de la última cita de tamizaje bucal:</label>
+        <input type="date" id="fecha_bucal" name="fecha_bucal">
+      </div>
+
+      <div>
+        <label for="visual">¿Tamizaje visual actualizado?</label>
+        <select id="visual" name="visual" required>
+          <option value="">-- Selecciona una opción --</option>
+          <option value="si">Sí</option>
+          <option value="no">No</option>
+        </select>
+      </div>
+      <div>
+        <label for="fecha_visual">Fecha de la última cita de tamizaje visual:</label>
+        <input type="date" id="fecha_visual" name="fecha_visual">
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <legend>SISBEN y EPS</legend>
+      <div>
+        <label for="sisben">¿Cuenta con SISBEN?</label>
+        <select id="sisben" name="sisben" required>
+          <option value="">-- Selecciona una opción --</option>
+          <option value="si">Sí</option>
+          <option value="no">No</option>
+        </select>
+      </div>
+      <div>
+        <label for="departamento_sisben">Departamento de expedición:</label>
+        <select id="departamento_sisben" name="departamento_sisben" required>
+          <option value="">-- Selecciona una opción --</option>
+          <option value="antioquia">Antioquia</option>
+          <option value="atlantico">Atlántico</option>
+          <option value="amazonas">Amazonas</option>
+          <option value="nariño">Nariño</option>
+          <option value="choco">Chocó</option>
+        </select>
+      </div>
+      <div>
+        <label for="municipio_sisben">Municipio de expedición:</label>
+        <select id="municipio_sisben" name="municipio_sisben" required>
+          <option value="">-- Selecciona una opción --</option>
+          <option value="medellin">Medellín</option>
+          <option value="yarumal">Yarumal</option>
+          <option value="angostura">Angostura</option>
+          <option value="marinilla">Marinilla</option>
+          <option value="rionegro">Rionegro</option>
+        </select>
+      </div>
+      <div>
+        <label for="eps">¿Cuenta con EPS?</label>
+        <select id="eps" name="eps" required>
+          <option value="">-- Selecciona una opción --</option>
+          <option value="si">Sí</option>
+          <option value="no">No</option>
+        </select>
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <legend>Vacunas COVID</legend>
+      <div>
+        <label for="covid">¿Esquema de vacunas COVID completo?</label>
+        <select id="covid" name="covid" required>
+          <option value="">-- Selecciona una opción --</option>
+          <option value="si">Sí</option>
+          <option value="pendiente">Pendiente de una dosis</option>
+          <option value="no">No deseo aplicarla (por razones personales)</option>
+        </select>
+      </div>
+    </fieldset>
+
+    <div>
+      <div style="display: flex; justify-content: space-between;">
+        <a href="formulario.html">
+          <button type="button">Anterior</button>
+        </a>
+        <a href="acudiente.html">
+          <button type="button">Siguiente</button>
+        </a>
+      </div>
+  </form>
+</body>
+
+</html>

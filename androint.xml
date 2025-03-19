@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SistemaInscripcion>
+    <Encabezado>
+        <Titulo>Dulce Corazón</Titulo>
+        <Logo src="I.CORPORATIVA/R.png" alt="logo" width="500" height="300"/>
+    </Encabezado>
+    <Bienvenida>
+        <Mensaje>
+            Estimadas familias, les invitamos a realizar la inscripción en uno de nuestros centros infantiles.
+            Si al momento de ingresar no cuenta con toda la información requerida, le sugerimos que vuelva
+            a ingresar para editar y actualizar los datos pendientes.
+        </Mensaje>
+    </Bienvenida>
+    <Formulario method="post">
+        <Campo>
+            <Etiqueta for="tipo_identificacion">Tipo de identificación</Etiqueta>
+            <Seleccion id="tipo_identificacion" name="tipo_identificacion" required="true">
+                <Opcion value="" disabled="true" selected="true">--Selecciona una opción--</Opcion>
+                <Opcion value="1">Registro civil</Opcion>
+                <Opcion value="2">Cédula de ciudadanía</Opcion>
+                <Opcion value="3">Tarjeta de identidad</Opcion>
+                <Opcion value="4">Permiso de protección temporal</Opcion>
+                <Opcion value="5">Acta de nacimiento</Opcion>
+            </Seleccion>
+        </Campo>
+        <Campo>
+            <Etiqueta for="documento">Número de identificación</Etiqueta>
+            <Entrada 
+                type="number" 
+                id="documento" 
+                name="documento" 
+                maxlength="20" 
+                placeholder="Escribe número de identificación" 
+                required="true"/>
+        </Campo>
+        <Campo>
+            <Etiqueta for="centro_infantil">Centro Infantil</Etiqueta>
+            <Seleccion id="centro_infantil" name="centro_infantil" required="true">
+                <Opcion value="" disabled="true" selected="true">--Selecciona una opción--</Opcion>
+                <Opcion value="1">Dulce Corazón 1</Opcion>
+                <Opcion value="2">Dulce Corazón 2</Opcion>
+                <Opcion value="3">Dulce Corazón 3</Opcion>
+                <Opcion value="4">Dulce Corazón 4</Opcion>
+            </Seleccion>
+        </Campo>
+        <Botones>
+            <Boton type="submit">Iniciar</Boton>
+            <Enlace href="formulario.html"/>
+            <Boton type="submit">Editar</Boton>
+            <Enlace href="formulario.html"/>
+        </Botones>
+    </Formulario>
+</SistemaInscripcion>

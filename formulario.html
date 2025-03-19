@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Participante</title>
+  <link rel="stylesheet" href="stylefor.css">
+</head>
+<script src="script.js"></script>
+
+<body>
+  <h1>Información del participante</h1>
+  <!-- Información Personal -->
+  <div class="section">
+    <label for="nombre1">Primer Nombre:</label>
+    <input type="text" id="nombre1" name="nombre1" placeholder="Primer Nombre" required>
+
+    <label for="nombre2">Segundo Nombre:</label>
+    <input type="text" id="nombre2" name="nombre2" placeholder="Segundo Nombre">
+
+    <label for="apellido1">Primer Apellido:</label>
+    <input type="text" id="apellido1" name="apellido1" placeholder="Primer Apellido" required>
+
+    <label for="apellido2">Segundo Apellido:</label>
+    <input type="text" id="apellido2" name="apellido2" placeholder="Segundo Apellido">
+
+    <label for="fecha">Fecha de nacimiento:</label>
+    <input type="date" id="fecha" name="fecha" required>
+
+    <label for="grupo">Grupo sanguíneo:</label>
+    <select id="grupo" name="grupo" required>
+      <option value="">-- Selecciona una opción --</option>
+      <option value="O+">O+</option>
+      <option value="O-">O-</option>
+      <option value="A+">A+</option>
+      <option value="A-">A-</option>
+      <option value="B+">B+</option>
+      <option value="B-">B-</option>
+      <option value="AB+">AB+</option>
+      <option value="AB-">AB-</option>
+    </select>
+  </div>
+
+  <!-- Lugar de Nacimiento -->
+  <h2>Lugar de Nacimiento</h2>
+  <div class="section">
+    <label for="pais">País de Nacimiento:</label>
+    <select id="pais" name="pais" required>
+      <option value="">-- Selecciona una opción --</option>
+      <option value="mexico">México</option>
+      <option value="colombia">Colombia</option>
+      <option value="venezuela">Venezuela</option>
+      <option value="españa">España</option>
+      <option value="panama">Panamá</option>
+      <option value="eeuu">EE.UU.</option>
+    </select>
+
+    <label for="departamento">Departamento de Nacimiento:</label>
+    <select id="departamento" name="departamento" required>
+      <option value="">-- Selecciona una opción --</option>
+      <option value="antioquia">Antioquia</option>
+      <option value="atlantico">Atlántico</option>
+      <option value="amazonas">Amazonas</option>
+      <option value="nariño">Nariño</option>
+      <option value="choco">Chocó</option>
+    </select>
+
+    <label for="municipio">Municipio de Nacimiento:</label>
+    <select id="municipio" name="municipio" required>
+      <option value="">-- Selecciona una opción --</option>
+      <option value="medellin">Medellín</option>
+      <option value="yarumal">Yarumal</option>
+      <option value="angostura">Angostura</option>
+      <option value="marinilla">Marinilla</option>
+      <option value="rionegro">Rionegro</option>
+      <option value="quibdo">Quibdó</option>
+    </select>
+  </div>
+
+  <!-- Información de Domicilio -->
+  <h2>Información de domicilio</h2>
+  <div class="section">
+    <label for="direccion">Dirección:</label>
+    <input type="text" id="direccion" name="direccion" placeholder="Dirección" required>
+
+    <label for="comuna">Comuna de Residencia:</label>
+    <select id="comuna" name="comuna" required>
+      <option value="">-- Selecciona una opción --</option>
+      <option value="buenosaires">Buenos Aires</option>
+      <option value="sanjavier">San Javier</option>
+      <option value="popular">Popular</option>
+    </select>
+
+    <label for="telefono1">Teléfono 1:</label>
+    <input type="tel" id="telefono1" name="telefono1" placeholder="Teléfono 1" required>
+
+    <label for="telefono2">Teléfono 2:</label>
+    <input type="tel" id="telefono2" name="telefono2" placeholder="Teléfono 2">
+  </div>
+
+  <!-- Tipo de Discapacidad -->
+  <h2>Tipo de discapacidad</h2>
+  <div class="section">
+    <label for="diagnostico">Selecciona el diagnóstico:</label>
+    <select id="diagnostico" name="diagnostico[]" multiple>
+      <option value="noaplica">No Aplica</option>
+      <option value="visual">Visual</option>
+      <option value="auditiva">Auditiva</option>
+      <option value="cognitiva">Cognitiva</option>
+      <option value="motora">Motora</option>
+    </select>
+    <!-- Botón de Enviar -->
+    <div style="display: flex; justify-content: space-between;">
+      <a href="Index.html">
+        <button type="button">Anterior</button>
+      </a>
+      <a href="salud.html">
+        <button type="button">Siguiente</button>
+      </a>
+    </div>
+  </div>
+</body>
+
+</html>

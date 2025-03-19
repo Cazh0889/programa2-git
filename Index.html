@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dulce Corazón</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<script src="script.js"></script>
+<body>
+    <div class="formulario1">
+        <img src="I.CORPORATIVA/R.png" alt="logo Dulce Corazón" width="500" height="300">
+        <h1>Bienvenido</h1>
+        <p>Estimadas familias, les invitamos a realizar la inscripción en uno de nuestros centros infantiles. Si al momento de ingresar no cuenta con toda la información requerida, le sugerimos que vuelva a ingresar para editar y actualizar los datos pendientes.</p>
+        
+        <form method="post">
+            <!-- Tipo de Identificación -->
+            <div class="documento">
+                <label for="tipo_identificacion">Tipo de identificación</label>
+                <select id="tipo_identificacion" name="tipo_identificacion" required>
+                    <option value="" disabled selected>--Selecciona una opción--</option>
+                    <option value="1">Registro civil</option>
+                    <option value="2">Cédula de ciudadanía</option>
+                    <option value="3">Tarjeta de identidad</option>
+                    <option value="4">Permiso de protección temporal</option>
+                    <option value="5">Acta de nacimiento</option>
+                </select>
+            </div>
+
+            <!-- Número de Identificación -->
+            <div class="tipodocumento">
+                <label for="documento">Número de identificación</label>
+                <input 
+                    type="number" 
+                    id="documento" 
+                    name="documento" 
+                    min="1"
+                    max="99999999999999999999"
+                    placeholder="Escribe número de identificación" 
+                    required>
+            </div>
+
+            <!-- Selección del Centro Infantil -->
+            <div class="sede">
+                <label for="centro_infantil">Centro Infantil</label>
+                <select id="centro_infantil" name="centro_infantil" required>
+                    <option value="" disabled selected>--Selecciona una opción--</option>
+                    <option value="1">Dulce Corazón 1</option>
+                    <option value="2">Dulce Corazón 2</option>
+                    <option value="3">Dulce Corazón 3</option>
+                    <option value="4">Dulce Corazón 4</option>
+                </select>
+            </div>
+
+            <!-- Botones -->
+            <div>
+                <a href="formulario.html">
+                    <button type="button">Iniciar</button>
+                </a>
+            </div>
+            <div>
+                <button type="submit" class="boton">Editar</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
+
